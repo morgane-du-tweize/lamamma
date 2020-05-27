@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your suggestions</title>
+</head>
+
+<body>
+
+    <style>
+
+        body {
+            background-image: url("https://drive.google.com/uc?id=13SHrEhA4F2zckBRXxVZk5PdZkfstmBWJ");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center; 
+            font-family: sans-serif;
+        }
+
+        .submit {
+            background-color: #ff3300;
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .frame {
+            border-style: solid;
+            border-width: 1px;
+            border-color: Maroon;
+            padding: 5px;
+            width: 500px;
+            border-radius: 5px;
+            }
+
+
+
+    </style>
+
+    <header>
+    <h1 id="title">Pizzeria La Mamma's suggestions</h1>
+    <p id="description">We do our best to satisfy your tastes. Please send us our pizzas suggestions.</p>
+    </header>
+    <br>
+
+
+    <main>
+    <form id="survey-form">
+        <div class="frame">
+            <p>Please tell us you name and e-mail</p>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe">Your name<br>
+            
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="janedoe101@adress">Your e-mail address<br>
+
+            <p>Please, tell us what gender are you</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <br>
+            <br>
+        </div>
+        <br>
+
+        <div class="frame">
+            <p>Tell us how are you crazy about our pizzas!</p>
+            <label for="number"></label>
+            <input type="number" id="number" name="name" min="0" max="100" placeholder="30">How many pizzas do you eat every month ?<br>
+        </div>
+        <br>
+        
+        <div class="frame">
+            <p>Choose your favorite pizza type</p>
+            <!-- tomato -->
+            <!-- cream -->
+            <!-- dessert -->
+            <label for="tomato">tomato</label>
+            <input type="radio" id="tomato" name="pizzatype" value="tomato">
+            <br>
+            <label for="cream">cream</label>
+            <input type="radio" id="cream" name="pizzatype" value="cream">
+            <br>
+            <label for="dessert">dessert</label>
+            <input type="radio" id="dessert" name="pizzatype" value="dessert">
+            <br>
+        
+        <br>
+
+        <p>Please tell us if there are some ingredients you won't eat</p>
+        <label for="meat"> Meat</label>
+        <input type="checkbox" id="meat" name="meat" value="meat">
+        <br>
+        <label for="pork">Pork</label>
+        <input type="checkbox" id="pork" name="pork" value="pork">
+        <br>
+        <label for="seafood">Seafood</label>
+        <input type="checkbox" id="seafood" name="seafood" value="seafood">
+        
+        <br>
+    </div>
+
+        <p>Do you want to tell us more ?</p>
+        <label for="suggestions"></label>
+        <textarea name="suggestions" rows="8" cols="100" id="suggestions">
+        </textarea>
+
+        <input type="submit" value="Submit" class="submit">
+
+    </form>
+    </main>
+</body>
+</html> 
